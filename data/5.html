@@ -1,4 +1,121 @@
 <!DOCUTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-	<title>2. 
+	<title>2. Графические методы расчета  нелинейных цепей</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css" />
+</head>
+<body>
+	<div	id="head">
+			<table	align="center">
+					<tr>
+						<td><a	class="back"	href="4.html"	title="Предыдущая страница"><div></div></a></td>
+						<td><a	class="menu"	href="2.html"	title="Оглавление"><div></div></a></td>
+						<td><a	class="next"	href="6.html" title="Следующая страница"><div></div></a></td>
+					</tr>
+			</table>
+	</div>
+	<div	id="body">
+	<h3>2. Графические методы расчета  нелинейных цепей</h3>
+	<p>Рассмотрим расчет простейших резистивных цепей, содержащих нелинейные элементы, графическими методами. При этом следует иметь в виду, что в ряде случаев можно обойтись без построения суммарных ВАХ ветвей или схемы в целом.</p>
+	<h3>Пример 2.1</h3>
+	<p>Для схемы (рис. 2.1) дано: <i>R=20 Ом</i>, ВАХ НЭ (рис. 2.2).</p>
+	<p>Определить напряжение <i>U</i>, при котором <i>U<sub>R</sub>=U<sub>НЭ</sub></i>.</p>
+	<table align = "center">
+		<tr>
+			<td align = "center"><img src = "img/image33.png"/></td>
+			<td align = "center"><img src = "img/image34.png"/></td>
+		</tr>
+		<tr>
+			<td align = "center">Рис. 2.1</td>
+			<td align = "center">Рис. 2.2</td>
+		</tr>
+	</table>
+	<br />
+	<center>Решение</center>
+	<p>1. Построим характеристику <img src = "img/image35.png" style = "vertical-align: middle;"/>.</p>
+	<p>2. В точке пересечения вольт-амперных характеристик линейного и нелинейного элементов напряжения на этих элементов равны (элементы соединены последовательно , и ток один и тот же):</p>
+	<center><img src = "img/image36.png"/></center>
+	<p>3. В соответствии с законом Кирхгофа для схемы получим:</p>
+	<center><img src = "img/image37.png"/></center>
+	<h3>Пример 2.2</h3>
+	<p>Для схемы (рис. 2.3) дано: <img src = "img/image38.png" style = "vertical-align: middle;"/> вольт-амперные характеристики нелинейных элементов представлены на рис. 2.4. Определить все токи.</p>
+	<table align = "center">
+		<tr>
+			<td align = "center"><img src = "img/image39.png"/></td>
+			<td align = "center"><img src = "img/image40.png"/></td>
+		</tr>
+		<tr>
+			<td align = "center">Рис. 2.3</td>
+			<td align = "center">Рис. 2.4</td>
+		</tr>
+	</table>
+	<center>Решение</center>
+	<p>1. Так как напряжение <i>U</i> является и напряжением на первом нелинейном элементе, то по ВАХ этого элемента определяем ток в нем: <img src = "img/image41.png" style = "vertical-align: middle;"/></p>
+	<p>2. Для определения тока во второй ветви необходимо найти напряжение на втором нелинейном элементе. В соответствии с уравнением <img src = "img/image42.png" style = "vertical-align: middle;"/> получим <img src = "img/image43.png" style = "vertical-align: middle;"/> Следовательно, <img src = "img/image44.png" style = "vertical-align: middle;"/></p>
+	<p>3. Ток в неразветвленной части схемы равен: <img src = "img/image45.png" style = "vertical-align: middle;"/></p>
+	<h3>Пример 2.3.</h3>
+	<p>Для схемы (рис. 2.5) дано: напряжение на параллельном участке цепи <img src = "img/image46.png" style = "vertical-align: middle;"/> вольт-амперные характеристики нелинейных элементов представлены на рис. 2.6.</p>
+	<p>Определить подводимое к схеме напряжение.</p>
+	<table align = "center">
+		<tr>
+			<td align = "center"><img src = "img/image48.png"/></td>
+			<td align = "center"><img src = "img/image49.png"/></td>
+		</tr>
+		<tr>
+			<td align = "center">Рис. 2.5</td>
+			<td align = "center">Рис. 2.6</td>
+		</tr>
+	</table>
+	<br />
+	<center>Решение</center>
+	<p>1. Пользуясь ВАХ нелинейных элементов НЭ<sub>2</sub> и НЭ<sub>3</sub>, напряжение на которых задано, определяем токи в этих ветвях:</p>
+	<center><img src = "img/image50.png"/></center>
+	<p>2. Определяем ток в НЭ<sub>1</sub>: <img src = "img/image51.png" style = "vertical-align: middle;"/></p>
+	<p>3. По ВАХ НЭ<sub>1</sub> определяем напряжение на этом элементе, оно равно: <img src = "img/image52.png" style = "vertical-align: middle;"/></p>
+	<p>4. Следовательно, <img src = "img/image53.png" style = "vertical-align: middle;"/></p>
+	<h3>Пример 2.4</h3>
+	<p>Для схемы (рис. 2.7) дано: <i>R=30 Ом</i>, напряжение <img src = "img/image54.png" style = "vertical-align: middle;"/> вольт-амперная характеристика одинаковых нелинейных элементов (рис. 2.8).</p>
+	<p>Определить токи.</p>
+	<table align = "center">
+		<tr>
+			<td align = "center"><img src = "img/image55.png"/></td>
+			<td align = "center"><img src = "img/image56.png"/></td>
+		</tr>
+		<tr>
+			<td align = "center">Рис. 2.7</td>
+			<td align = "center">Рис. 2.8</td>
+		</tr>
+	</table>
+	<br />
+	<center>Решение</center>
+	<p>1. Ток <i>I<sub>2</sub></i> определяем по ВАХ НЭ, так как напряжение на нем известно: <img src = "img/image57.png" style = "vertical-align: middle;"/>.</p>
+	<p>2. Так как НЭ одинаковые, то <img src = "img/image58.png" style = "vertical-align: middle;"/>. Следовательно, напряжение на сопротивлении R и ток в этой ветви равны соответственно: <img src = "img/image59.png" style = "vertical-align: middle;"/></p>
+	<p>3. Ток <img src = "img/image60.png" style = "vertical-align: middle;"/></p>
+	<h3>Пример 2.5</h3>
+	<p>Для схемы (рис. 2.9) дано: напряжение <img src = "img/image61.png" style = "vertical-align: middle;"/> вольт-амперная характеристика одинаковых нелинейных элементов (рис. 2.10). Определить токи.</p>
+	<table align = "center">
+		<tr>
+			<td align = "center"><img src = "img/image62.png"/></td>
+			<td align = "center"><img src = "img/image63.png"/></td>
+		</tr>
+		<tr>
+			<td align = "center">Рис. 2.9</td>
+			<td align = "center">Рис. 2.10</td>
+		</tr>
+	</table>
+	<br />
+	<p>1. Ток <i>I<sub>2</sub></i> определяем по ВАХ НЭ, так как напряжение на нем известно: <img src = "img/image64.png" style = "vertical-align: middle;"/>.</p>
+	<p>2. Так как НЭ одинаковые, то напряжение на каждом из двух последовательно соединенных НЭ равны <i>0.5U = 35 В</i>. Следовательно, ток <i>I<sub>1</sub> = 1.4 A</i>.</p>
+	<p>3. Ток <i>I = I<sub>1</sub> + I<sub>2</sub> = 3.2 A</i>.</p>
+	</div>
+	<div	id="head">
+			<table	align="center">
+					<tr>
+						<td><a	class="back"	href="4.html"	title="Предыдущая страница"><div></div></a></td>
+						<td><a	class="menu"	href="2.html"	title="Оглавление"><div></div></a></td>
+						<td><a	class="next"	href="6.html" title="Следующая страница"><div></div></a></td>
+					</tr>
+			</table>
+	</div>
+</body>
+</html>
