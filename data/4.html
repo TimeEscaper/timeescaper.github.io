@@ -1,0 +1,107 @@
+<!DOCUTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>1. Расчёт нелинейных цепей методом эквивалентного источника</title>
+	<link rel="stylesheet" type="text/css" href="css/style2.css" />
+</head>
+<body>
+	<div	id="head">
+			<table	align="center">
+					<tr>
+						<td><a	class="back"	href="3.html"	title="Предыдущая страница"><div></div></a></td>
+						<td><a	class="menu"	href="2.html"	title="Оглавление"><div></div></a></td>
+						<td><a	class="next"	href="5.html" title="Следующая страница"><div></div></a></td>
+					</tr>
+			</table>
+	</div>
+	<div	id="body">
+	<h3>1. Расчёт нелинейных цепей методом эквивалентного источника</h3>
+	<p>Для расчета электрических цепей любой сложности, содержащих только один нелинейный элемент, может быть применен метод эквивалентного генератора.</p>
+	<p>Относительно нелинейного элемента всю остальную часть схемы можно заменить эквивалентным генератором напряжения, ЭДС которого равна напряжению на разомкнутых зажимах ветви с нелинейным элементом, а его внутреннее сопротивление равно входному сопротивлению пассивного линейного двухполюсника относительно разомкнутой ветви с нелинейным элементом.</p>
+	<p>Так как определение напряжения холостого хода и входного сопротивления проводится при исключенном из рассмотрения нелинейном элементе, то эти этапы расчета являются чисто линейными задачами. Таким образом, сложная схема сводится к схеме, представленной на рис. 1.1. Определение же тока в нелинейном элементе и напряжения на нем проводится графическим методом.</p>
+	<center><img src = "img/image1.png"/></center>
+	<center>Рис. 1.1</center>
+	<p>Запишем для схемы (рис. 1.1) уравнение по второму закону Кирхгофа: <img src = "img/image2.png" style = "vertical-align: middle;" />.</p>
+	<p>Ток в схеме (и напряжение на нелинейном элементе) можно определить по найденному значению ЭДС, построив линейную зависимость <img src = "img/image3.png" style = "vertical-align: middle;"/> и сложив две вольт-амперные характеристики <img src = "img/image4.png" style = "vertical-align: middle;"/> и <img src = "img/image5.png" style = "vertical-align: middle;"/> (рис. 1.2).
+	<center><img src = "img/image6.png"/></center>
+	<center>Рис. 1.2</center>
+	<p>Однако расчет можно упростить, если исходное уравнение привести к виду: <img src = "img/image7.png" style = "vertical-align: middle;"/>.</p>
+	<p>В этом случае решение задачи, то есть определение тока и напряжения на нелинейном элементе, - это точка пересечения вольт-амперной характеристики (ВАХ) нелинейного элемента (НЭ) и линейной вольт-амперной характеристики эквивалентного генератора <img src = "img/image8.png" style = "vertical-align: middle;"/>, которую легко построить по любым двум точкам (рис. 1.3).</p>
+	<center><img src = "img/image9.png"/></center>
+	<center>Рис. 1.3</center>
+	<h3>Пример 1.1</h3>
+	<p>Определить токи и напряжение на нелинейном элементе в схеме (рис. 1.4), если дано:</p>
+	<center><img src = "img/image10.png"/></center>
+	<br />
+	<table align = "center">
+		<tr>
+			<td align = "center"><img src = "img/image11.png"/></td>
+			<td align = "center"><img src = "img/image12.png"/></td>
+		</tr>
+		<tr>
+			<td align = "center">Рис. 1.4</td>
+			<td align = "center">Рис. 1.5</td>
+		</tr>
+	</table>
+	<br />
+	<center>Решение</center>
+	<p>Так как в схеме только один нелинейный элемент, то расчет проведем методом эквивалентного генератора напряжения.</p>
+	<p>1. Размыкаем ветвь с нелинейным элементом (рис. 1.6). В этом случае полученная схема является линейной и к ней применимы все методы расчета линейных цепей.</p>
+	<center><img src = "img/image13.png"/></center>
+	<center>Рис. 1.6</center>
+	<p>Полученную схему рассчитываем методом контурных токов, после чего определяем напряжение холостого хода <img src = "img/image14.png" style = "vertical-align: middle;"/>.</p>
+	<center><img src = "img/image15.png"/></center>
+	<center><img src = "img/image16.png"/></center>
+	<p>2. Исключаем из схемы (рис. 1.4) все источники и определяем входное сопротивление полученного пассивного двухполюсника со стороны разомкнутых зажимов (рис. 1.7):</p>
+	<center><img src = "img/image17.png"/></center>
+	<center>Рис. 1.7</center>
+	<br />
+	<center><img src = "img/image18.png"/></center>
+	<p>3. Следовательно, исходная схема (рис. 1.4) сводится к схеме (рис. 1.8).</p>
+	<center><img src = "img/image19.png"/></center>
+	<center>Рис. 1.8</center>
+	<p>Построив характеристику <img src = "img/image20.png" style = "vertical-align: middle;"/>, найдем в точке ее пересечения с ВАХ НЭ значения тока в нелинейном элементе и напряжения на нем: <img src = "img/image21.png" style = "vertical-align: middle;"/> (рис. 1.5).</p>
+	<p>Остальные токи в схеме определяем, пользуясь законами Кирхгофа:</p>
+	<center><img src = "img/image22.png"/></center>
+	<p>Проверка: например, для контура 1-2-3 по закону Кирхгофа.</p>
+	<h3>Пример 1.2</h3>
+	<p>Определить токи и напряжение на нелинейном элементе в схеме (рис. 1.9), если дано:</p>
+	<center><img src = "img/image23.png"/></center>
+	<br />
+	<table align = "center">
+		<tr>
+			<td align = "center"><img src = "img/image24.png"/></td>
+			<td align = "center"><img src = "img/image25.png"/></td>
+		</tr>
+		<tr>
+			<td align = "center">Рис. 1.9</td>
+			<td align = "center">Рис. 1.10</td>
+		</tr>
+	</table>
+	<p>1. Размыкаем ветвь с нелинейным элементом (рис. 1.11) и находим напряжение холостого хода, предварительно определив токи в ветвях.</p>
+	<center><img src = "img/image26.png"/></center>
+	<center>Рис. 1.11</center>
+	<br />
+	<center><img src = "img/image27.png"/></center>
+	<p>2. Исключаем из схемы (рис. 1.9) все источники и определяем входное сопротивление полученного пассивного двухполюсника со стороны разомкнутых зажимов (рис. 1.12):</p>
+	<center><img src = "img/image28.png"/></center>
+	<center>Рис. 1.12</center>
+	<br />	
+	<center><img src = "img/image29.png"/></center>
+	<p>3. Следовательно, исходная схема (рис. 1.9) сводится к схеме (рис. 1.1).</p>
+	<p>Построив характеристику <img src = "img/image30.png" style = "vertical-align: middle;"/>, найдем в точке ее пересечения с ВАХ НЭ значения тока в нелинейном элементе и напряжения на нем: <img src = "img/image31.png" style = "vertical-align: middle;"/> (рис. 1.10).</p>
+	<p>4. Остальные токи в схеме определяем, пользуясь законами Кирхгофа:</p>
+	<center><img src = "img/image32.png"/></center>
+	<br />
+	</div>
+	<div	id="tile">
+			<table	align="center">
+					<tr>
+						<td><a	class="back"	href="3.html"	title="Предыдущая страница"><div></div></a></td>
+						<td><a	class="menu"	href="2.html"	title="Оглавление"><div></div></a></td>
+						<td><a	class="next"	href="5.html" title="Следующая страница"><div></div></a></td>
+					</tr>
+			</table>
+	</div>
+</body>
+</html>

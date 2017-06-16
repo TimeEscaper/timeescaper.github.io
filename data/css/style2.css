@@ -1,0 +1,55 @@
+#head, #body, #tile	{
+						width: 1024px;
+						left: 50%;
+						margin-left: -512px;
+						position: relative;
+					}
+#head, #tile	{
+					text-align: center;
+				}
+#body	{
+			text-align: justify;
+			border-top: 2px solid #000000;
+			border-bottom: 2px solid #000000;
+			font-family: Arial;
+		}
+#body	p	{
+					text-indent: 20px;
+					line-height: 20px;
+			}
+#body	span	{
+					font-size: 12px;
+					font-style: italic;
+				}
+#body	span	p	{
+						line-height: 10px;
+					}
+#body	a	{
+				color: #0000ff;
+				text-decoration: none;
+			}
+#body	a:hover	{
+					color: #ff0000;
+				}
+a	div	{
+			width: 32px;
+			height: 32px;
+		}
+.back	div	{
+				background-image:	url(img/back.png);
+			}
+.back:hover	div	{
+					background-image:	url(img/back.gif);
+				}
+.menu	div	{
+				background-image:	url(img/menu.png);
+			}
+.menu:hover	div	{
+					background-image:	url(img/menu.gif);
+				}
+.next	div	{
+				background-image:	url(img/next.png);
+			}
+.next:hover	div	{
+					background-image:	url(img/next.gif);
+				}
